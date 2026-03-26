@@ -174,7 +174,7 @@ img { display: block; max-width: 100%; }
   font-size: clamp(80px, 20vw, 260px);
   font-weight: 700;
   letter-spacing: -4px;
-  color: rgba(255,255,255,0.018);
+  color: rgba(255,255,255,0.050);
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
@@ -219,6 +219,7 @@ img { display: block; max-width: 100%; }
   line-height: 0.9;
   letter-spacing: -3px;
   margin-bottom: 32px;
+  opacity: 0.82;
 }
 
 .name-line {
