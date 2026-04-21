@@ -762,6 +762,8 @@ img { display: block; max-width: 100%; }
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px;
+  display: inline-block;
+  width: auto;
 }
 
 .contact-item {
