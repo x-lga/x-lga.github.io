@@ -140,108 +140,149 @@
         <span>02 / Tech Stack</span>
       </div>
       <h2 class="section-title">The full arsenal.</h2>
-
       <div class="stack-grid">
 
+        <!-- Cloud & Identity -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
-            <span class="stack-cat-name">Cloud & Identity</span>
+            <span class="stack-cat-name">Cloud &amp; Identity</span>
           </div>
           <div class="stack-items">
             <span class="stack-item">Microsoft Azure</span>
             <span class="stack-item">Azure Entra ID</span>
-            <span class="stack-item">Azure AD Connect</span>
-            <span class="stack-item">RBAC</span>
-            <span class="stack-item">Azure Monitor</span>
-            <span class="stack-item">Log Analytics</span>
-            <span class="stack-item">KQL</span>
-            <span class="stack-item">Defender for Cloud</span>
+            <span class="stack-item">Azure AD Connect (PHS)</span>
+            <span class="stack-item">RBAC (3 scope levels)</span>
+            <span class="stack-item">Privileged Identity Management</span>
+            <span class="stack-item">Conditional Access</span>
+            <span class="stack-item">Azure Bastion</span>
+            <span class="stack-item">Private Endpoints</span>
           </div>
         </div>
 
+        <!-- Azure Infrastructure -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
-            <span class="stack-cat-name">Active Directory & Endpoints</span>
+            <span class="stack-cat-name">Azure Infrastructure</span>
+          </div>
+          <div class="stack-items">
+            <span class="stack-item">Azure VNet / NSG / UDR</span>
+            <span class="stack-item">Azure Firewall Premium</span>
+            <span class="stack-item">Application Gateway WAF v2</span>
+            <span class="stack-item">SQL Managed Instance</span>
+            <span class="stack-item">Azure Files + File Sync</span>
+            <span class="stack-item">Azure Backup / RSV</span>
+            <span class="stack-item">Azure Container Apps</span>
+            <span class="stack-item">Bicep IaC</span>
+          </div>
+        </div>
+
+        <!-- Monitoring & SIEM -->
+        <div class="stack-category">
+          <div class="stack-cat-header">
+            <span class="stack-icon">⬡</span>
+            <span class="stack-cat-name">Monitoring &amp; SIEM</span>
+          </div>
+          <div class="stack-items">
+            <span class="stack-item">Log Analytics Workspace</span>
+            <span class="stack-item">KQL</span>
+            <span class="stack-item">Azure Monitor Alerts</span>
+            <span class="stack-item">Microsoft Sentinel</span>
+            <span class="stack-item">Defender for Cloud (P2)</span>
+            <span class="stack-item">Splunk Free (SPL)</span>
+            <span class="stack-item">PRTG Alert Response</span>
+            <span class="stack-item">NSG Flow Logs</span>
+          </div>
+        </div>
+
+        <!-- Active Directory & Endpoints -->
+        <div class="stack-category">
+          <div class="stack-cat-header">
+            <span class="stack-icon">⬡</span>
+            <span class="stack-cat-name">Active Directory &amp; Endpoints</span>
           </div>
           <div class="stack-items">
             <span class="stack-item">Windows Server 2022</span>
             <span class="stack-item">AD DS / DNS / DHCP</span>
             <span class="stack-item">Group Policy (GPO)</span>
-            <span class="stack-item">Microsoft Intune</span>
-            <span class="stack-item">BitLocker</span>
-            <span class="stack-item">Zero Trust</span>
-            <span class="stack-item">Okta MFA</span>
+            <span class="stack-item">Microsoft Intune (MDM)</span>
+            <span class="stack-item">Win32 App Deployment</span>
+            <span class="stack-item">BitLocker + TPM</span>
             <span class="stack-item">LDAP / Kerberos</span>
+            <span class="stack-item">Azure Dev Box</span>
           </div>
         </div>
 
+        <!-- Security Operations -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
-            <span class="stack-cat-name">Security & SIEM</span>
+            <span class="stack-cat-name">Security Operations</span>
           </div>
           <div class="stack-items">
-            <span class="stack-item">Splunk (SPL)</span>
+            <span class="stack-item">MITRE ATT&amp;CK (mapped)</span>
+            <span class="stack-item">Incident Response Playbooks</span>
             <span class="stack-item">Nessus Essentials</span>
-            <span class="stack-item">Burp Suite</span>
-            <span class="stack-item">Kali Linux</span>
-            <span class="stack-item">OWASP Testing</span>
-            <span class="stack-item">CVSS v3.1</span>
-            <span class="stack-item">Phishing Triage</span>
-            <span class="stack-item">Incident Response</span>
+            <span class="stack-item">CVSS v3.1 Triage</span>
+            <span class="stack-item">Phishing Investigation</span>
+            <span class="stack-item">Ransomware Triage</span>
+            <span class="stack-item">False Positive Classification</span>
+            <span class="stack-item">Vulnerability Remediation</span>
           </div>
         </div>
 
+        <!-- Network Infrastructure -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
             <span class="stack-cat-name">Network Infrastructure</span>
           </div>
           <div class="stack-items">
-            <span class="stack-item">pfSense</span>
-            <span class="stack-item">VLAN (802.1Q)</span>
+            <span class="stack-item">pfSense Firewall</span>
+            <span class="stack-item">VLAN Segmentation (802.1Q)</span>
             <span class="stack-item">WireGuard VPN</span>
-            <span class="stack-item">TCP/IP</span>
-            <span class="stack-item">DNS / DHCP / NAT</span>
-            <span class="stack-item">Wireshark</span>
-            <span class="stack-item">PRTG / SolarWinds</span>
-            <span class="stack-item">OSI Model</span>
+            <span class="stack-item">802.1X / RADIUS (NPS)</span>
+            <span class="stack-item">DHCP Scope Management</span>
+            <span class="stack-item">DNS (AD-integrated)</span>
+            <span class="stack-item">TCP/IP / OSI Model</span>
+            <span class="stack-item">Asymmetric Routing Diagnosis</span>
           </div>
         </div>
 
+        <!-- Scripting & Automation -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
-            <span class="stack-cat-name">Scripting & Automation</span>
+            <span class="stack-cat-name">Scripting &amp; Automation</span>
           </div>
           <div class="stack-items">
-            <span class="stack-item">PowerShell</span>
-            <span class="stack-item">Bash</span>
-            <span class="stack-item">Python</span>
-            <span class="stack-item">KQL</span>
+            <span class="stack-item">PowerShell (production scripts)</span>
+            <span class="stack-item">Bash (Linux admin scripts)</span>
+            <span class="stack-item">Python (ticket automation)</span>
+            <span class="stack-item">KQL (25+ tested queries)</span>
             <span class="stack-item">Splunk SPL</span>
-            <span class="stack-item">YAML (concepts)</span>
-            <span class="stack-item">JSON</span>
-            <span class="stack-item">Markdown</span>
+            <span class="stack-item">Azure CLI</span>
+            <span class="stack-item">Bicep / ARM</span>
+            <span class="stack-item">JSON / Markdown</span>
           </div>
         </div>
 
+        <!-- Platforms & ITSM -->
         <div class="stack-category">
           <div class="stack-cat-header">
             <span class="stack-icon">⬡</span>
-            <span class="stack-cat-name">Platforms & ITSM</span>
+            <span class="stack-cat-name">Platforms &amp; ITSM</span>
           </div>
           <div class="stack-items">
-            <span class="stack-item">Proxmox VE</span>
+            <span class="stack-item">Proxmox VE 8.x</span>
             <span class="stack-item">Ubuntu Server 22.04</span>
-            <span class="stack-item">ServiceNow PDI</span>
+            <span class="stack-item">Kali Linux</span>
             <span class="stack-item">ITIL 4 Foundation</span>
-            <span class="stack-item">Git & GitHub</span>
+            <span class="stack-item">Git &amp; GitHub</span>
+            <span class="stack-item">systemd Administration</span>
             <span class="stack-item">VS Code</span>
-            <span class="stack-item">Docker (basics)</span>
-            <span class="stack-item">VirtualBox / VMware</span>
+            <span class="stack-item">PnP PowerShell (M365)</span>
           </div>
         </div>
 
@@ -249,7 +290,7 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+   <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="section-inner">
       <div class="section-label">
@@ -260,16 +301,16 @@
         The work.<br>
         <em>All documented.</em>
       </h2>
-
       <div class="projects-grid">
 
-        <a class="project-card" href="https://github.com/x-lga/helpdesk-ad-automation" target="_blank" rel="noopener">
+        <!-- 01 -->
+        <a class="project-card" href="https://github.com/YOUR-USERNAME/helpdesk-ad-automation" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">01</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">helpdesk-ad-automation</h3>
-          <p class="project-desc">PowerShell AD lifecycle scripts - bulk user creation from CSV, password reset with lockout diagnostics, account unlock, disk space alerting, remote session management. Python ticket intake with ITIL 4 categorisation and JSON audit logging.</p>
+          <p class="project-desc">5 production PowerShell scripts covering the full AD user lifecycle — bulk creation from CSV (45 min → 4 min), password reset with identity verification and temp password generation, intelligent account unlock handling 4 lockout scenarios, complete offboarding automation, and quarterly access review report. Plus a Python ticket intake tool that standardises L1 triage across 7 issue types with ITIL 4 P1–P4 classification, SLA targets, and JSON audit logging.</p>
           <div class="project-tags">
             <span>PowerShell</span>
             <span>Python</span>
@@ -278,108 +319,115 @@
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/x-lga/network-noc-runbook" target="_blank" rel="noopener">
+        <!-- 02 -->
+        <a class="project-card" href="https://github.com/YOUR-USERNAME/network-noc-runbook" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">02</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">network-noc-runbook</h3>
-          <p class="project-desc">Structured L1 NOC runbook - OSI-layered connectivity triage, DNS failure diagnosis, PRTG alert response for all five sensor states, VPN troubleshooting with MTU testing, pfSense VLAN procedures, and formal escalation handoff standard.</p>
+          <p class="project-desc">6 structured L1 NOC procedures — connectivity triage with a ping interpretation table mapping results to OSI layers, DNS failure diagnosis, PRTG alert response across 6 sensor types, VPN MTU testing and remediation, pfSense VLAN and inter-VLAN firewall procedures, and a complete ITIL 4 L2 escalation handoff template. Includes ASCII topology diagram, VLAN firewall rule tables, and port/OSI quick-reference cards.</p>
           <div class="project-tags">
-            <span>Network+</span>
-            <span>PRTG</span>
+            <span>CompTIA Network+</span>
             <span>pfSense</span>
+            <span>PRTG</span>
             <span>ITIL 4</span>
           </div>
         </a>
 
-        <a class="project-card featured" href="https://github.com/x-lga/soc-incident-response-playbook" target="_blank" rel="noopener">
+        <!-- 03 — featured -->
+        <a class="project-card featured" href="https://github.com/YOUR-USERNAME/soc-incident-response-playbook" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">03</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">soc-incident-response-playbook</h3>
-          <p class="project-desc">Tier 1 SOC playbooks - phishing triage from user report through P1 escalation, failed authentication pattern investigation, false positive 8-criterion classification, Splunk SPL query library for auth/network/process events, CVSS v3.1 reference.</p>
+          <p class="project-desc">4 Tier 1 SOC playbooks — phishing triage from user call script through forensic preservation and P1 escalation, malware response with containment rationale and PowerShell evidence collection, failed authentication investigation distinguishing brute force from Pass-the-Hash, and false positive classification with a 10-criterion decision matrix. Every scenario mapped to MITRE ATT&amp;CK technique IDs and tactics. 20+ SPL queries tested in live Splunk Free. MFA enforcement checklist and IAM access review procedure aligned to ISO 27001 and SOC 2.</p>
           <div class="project-tags">
-            <span>Security+</span>
+            <span>CompTIA Security+</span>
+            <span>MITRE ATT&amp;CK</span>
             <span>Splunk SPL</span>
-            <span>CVSS</span>
-            <span>Phishing</span>
+            <span>CVSS v3.1</span>
           </div>
         </a>
 
-        <a class="project-card featured" href="https://github.com/x-lga/azure-hybrid-lab" target="_blank" rel="noopener">
+        <!-- 04 — featured -->
+        <a class="project-card featured" href="https://github.com/YOUR-USERNAME/azure-hybrid-lab" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">04</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">azure-hybrid-lab</h3>
-          <p class="project-desc">Fully documented Azure hybrid environment - VNet with segmented subnets and NSG rules, Azure AD Connect hybrid sync, RBAC at three scope levels, Azure Monitor with Log Analytics and metric alerts, Intune compliance policy with verified enrollment.</p>
+          <p class="project-desc">A working Azure hybrid environment — not a tutorial walkthrough. On-premises AD (contoso.local) synced to Entra ID via AD Connect with Password Hash Sync. VNet with two subnets, NSG deny-all with explicit allows, Bastion eliminating every public management port. RBAC demonstrated at subscription, resource group, and resource scope. Log Analytics with 8 KQL queries verified returning real data. CPU metric alert tested end-to-end — load generated, alert fired, email received. Intune device compliance policy and Win32 app silent deployment. Every architectural choice documented with written justification: why PHS over PTA, why Bastion over public RDP, why RG scope not subscription scope.</p>
           <div class="project-tags">
             <span>AZ-104</span>
             <span>Entra ID</span>
-            <span>RBAC</span>
-            <span>Intune</span>
+            <span>AD Connect</span>
+            <span>KQL</span>
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/x-lga/azure-l1-support-runbook" target="_blank" rel="noopener">
+        <!-- 05 -->
+        <a class="project-card" href="https://github.com/YOUR-USERNAME/azure-l1-support-runbook" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">05</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">azure-l1-support-runbook</h3>
-          <p class="project-desc">Azure Portal L1 procedures - VM error code decision table, Entra ID user management with sign-in log failure interpretation, NSG rule creation, App Service recovery, KQL quick reference library, error codes with L1 action for each.</p>
+          <p class="project-desc">6 Azure Portal L1 runbooks built for real incident use — VM troubleshooting with the critical Stop/Deallocate vs Restart distinction, Entra ID management covering the cloud-only vs synced account difference that prevents the "change reverts in 30 minutes" mistake, NSG diagnostics with IP Flow Verify and Effective Security Rules, App Service 502/503 triage and deployment slot rollback, storage access tracing RBAC vs firewall vs SAS token, and cost spike investigation. 25+ KQL queries and a reference covering 20 Azure error codes with root cause and L1 action per code.</p>
           <div class="project-tags">
-            <span>AZ-900</span>
-            <span>KQL</span>
+            <span>AZ-104</span>
             <span>Azure Portal</span>
-            <span>Entra ID</span>
+            <span>KQL</span>
+            <span>ITIL 4</span>
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/x-lga/windows-linux-support-scripts" target="_blank" rel="noopener">
+        <!-- 06 -->
+        <a class="project-card" href="https://github.com/YOUR-USERNAME/windows-linux-support-scripts" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">06</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">windows-linux-support-scripts</h3>
-          <p class="project-desc">PowerShell and Bash scripts covering the highest-frequency L1/L2 tasks - DNS flush, print queue clear, disk space report, network stack reset, system baseline, system health, timestamped backup with retention, user provisioning, log cleanup.</p>
+          <p class="project-desc">14 production-quality scripts — 8 PowerShell, 6 Bash — each solving a specific recurring ticket type. DNS flush with post-flush resolution verification, print queue clear with full spooler lifecycle management and timeout handling, colour-coded disk space report with cleanup guidance, network stack reset with mandatory typed confirmation, comprehensive system info collection, multi-host multi-port TCP connectivity tester with 30-service name lookup, consolidated multi-log Windows Event Log error retrieval, service restart with health verification. Bash: system health report with CPU/memory/disk/network analysis, timestamped backup with archive integrity verification, user provisioning with regex validation and 90-day expiry policy, log cleanup with dry-run mode, disk usage large-file analysis, service monitor with auto-restart for cron.</p>
           <div class="project-tags">
             <span>PowerShell</span>
             <span>Bash</span>
             <span>CompTIA A+</span>
-            <span>Linux</span>
+            <span>CompTIA Network+</span>
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/x-lga/homelab-documentation" target="_blank" rel="noopener">
+        <!-- 07 — featured -->
+        <a class="project-card featured" href="https://github.com/YOUR-USERNAME/homelab-documentation" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">07</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">homelab-documentation</h3>
-          <p class="project-desc">Complete enterprise home lab on Proxmox - VMs running simultaneously: Windows Server 2022 DC, pfSense VLAN firewall, Azure hybrid via AD Connect, Splunk SIEM with forwarder, Nessus vulnerability scanning, Microsoft Intune, Kali Linux.</p>
+          <p class="project-desc">Complete build documentation for a six-VM enterprise home lab on Proxmox VE — Windows Server 2022 with AD DS, DNS, DHCP, and Group Policy; pfSense with three-VLAN segmentation (Work/Guest/Management) and WireGuard VPN; Azure hybrid identity via AD Connect; Splunk Free SIEM with Universal Forwarder from the DC; Nessus Essentials with CVSS-based remediation workflow; and Microsoft Intune device compliance. Full architecture diagrams, VLAN firewall rule tables with per-rule justifications, AD Connect sync flow diagram, and a cert-to-lab mapping document. The troubleshooting log documents 8 real issues encountered during the build — DNS service startup type, pfSense rule order blocking AD Connect sync, DHCP relay missing in a routed VLAN environment, Splunk missing outputs.conf causing silent data loss, Nessus returning false-zero results because Windows Firewall blocked the scanner, SYSVOL permissions broken by a Proxmox snapshot rollback.</p>
           <div class="project-tags">
-            <span>Proxmox</span>
+            <span>Proxmox VE</span>
+            <span>pfSense</span>
             <span>Splunk</span>
             <span>Nessus</span>
-            <span>pfSense</span>
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/x-lga/it-support-knowledge-base" target="_blank" rel="noopener">
+        <!-- 08 -->
+        <a class="project-card" href="https://github.com/YOUR-USERNAME/it-support-knowledge-base" target="_blank" rel="noopener">
           <div class="project-top">
             <div class="project-number">08</div>
             <div class="project-arrow">→</div>
           </div>
           <h3 class="project-title">it-support-knowledge-base</h3>
-          <p class="project-desc">Resolution articles formatted with ITIL 4 P1-P4 priority, step-by-step procedures, common causes, and escalation criteria. Categories: Hardware, Software, Network, Security, Azure, Identity. ServiceNow-standard knowledge base format.</p>
+          <p class="project-desc">19 production-quality knowledge articles built the way a real MSP would — not documentation summaries, but institutional knowledge that documents what takes months of hands-on experience to learn. Windows: profile corruption with the .bak registry duplicate pattern, WMI repository rebuild, BitLocker recovery with TPM event ID reference, certificate chain testing, VSS recovery. Microsoft 365: Autodiscover hybrid SCP failures, Teams media quality with Call Analytics thresholds, SharePoint inheritance breaks, Conditional Access sign-in failure by grant control type. Azure: VM boot failure decision tree, token taxonomy and app consent, Backup error codes, cost spike classification. Networking: 802.1X NPS reason code reference, asymmetric routing in Azure, DHCP exhaustion emergency response. Security: ransomware L1 triage with forensic rationale, insider threat KQL indicators, TLS chain errors. Linux: filesystem recovery with SMART-first discipline, systemd dependency chain tracing, iowait root cause. Three ITIL 4 templates, contribution guide, and quality standards.</p>
           <div class="project-tags">
             <span>ITIL 4</span>
-            <span>Documentation</span>
-            <span>ServiceNow</span>
             <span>All Roles</span>
+            <span>All Certs</span>
+            <span>Documentation</span>
           </div>
         </a>
 
