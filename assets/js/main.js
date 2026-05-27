@@ -2,30 +2,25 @@
 'use strict';
 
 /* ─── EMAIL OBFUSCATION (bot protection) ─────────────────────────────────
-   The email address is never written in plain text in the HTML source.
-   Scrapers reading the HTML or CSS will not find it.
-   It is assembled at runtime in JavaScript only.
+   The email is never stored in the DOM or as a readable string.
+   It is assembled only at the exact moment a human clicks the button.
+   No Base64, no “decode me” pattern, nothing for scrapers to latch onto.
    ──────────────────────────────────────────────────────────────────────── */
-(function buildEmail() {
-  // Split into parts — bots look for @domain.tld patterns in source
-  // Replace these three variables with your actual email parts
-  const user   = 'lga.it';    
-  const domain = 'proton';                   
-  const tld    = 'me';                     
-
-  const address = `${user}@${domain}.${tld}`;
-
-  // Populate the display span
-  const display = document.getElementById('email-display');
-  if (display) {
-    display.textContent = address;
-  }
-
-  // Wire up the email button
+(function () {
   const btn = document.getElementById('email-btn');
-  if (btn) {
-    btn.href = `mailto:${address}`;
-  }
+  if (!btn) return;
+
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    
+    const user   = 'lga.it';
+    const domain = 'proton';
+    const tld    = 'me';
+
+    // Assemble and open email client
+    window.location.href = 'mailto:' + user + '@' + domain + '.' + tld;
+  });
 })();
 
 
